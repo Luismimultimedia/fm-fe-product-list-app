@@ -4,10 +4,22 @@
     &__heading {
         @include text-display-1000;
         color: $rose-900;
+        margin-bottom: 32px;
     }
 
     &__inner {
         display: grid;
         grid-template-columns: 1fr;
+        list-style-type: none;
+        gap: 24px 24px;
+
+        @include tablet-up {
+            grid-template-columns: repeat(3, fit-content(33%));
+            row-gap: 32px;
+        }
+
+        li {
+            width: 100%;  
+        }
     }
 }
