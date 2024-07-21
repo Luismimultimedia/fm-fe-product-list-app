@@ -1,7 +1,13 @@
+@import "../../styles/shared/index";
+
 .home-page {
     &__product-list {
         display: grid;
-        grid-template-columns: 1fr 380px;
+        grid-template-columns: 1fr;
         gap: 32px 32px;
+
+        @include desktop-up {
+            grid-template-columns: 1fr 380px;
+        }
     }
 }

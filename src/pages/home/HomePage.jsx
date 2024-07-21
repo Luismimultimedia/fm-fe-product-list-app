@@ -1,5 +1,6 @@
 // components
 import ProductLayout from "../../layouts/ProductLayout";
+import ProductList from "./components/ProductList/ProductList";
 
 // custom hooks
 import useFetch from "../../hooks/useFetch";
@@ -21,9 +22,7 @@ const HomePage = () => {
     return (
         <ProductLayout>
             <section className="home-page__product-list">
-                <div>
-                    <h1>Desserts</h1>
-                </div>
+                <ProductList products={data}/>
                 <div>d</div>
             </section>
         </ProductLayout>
