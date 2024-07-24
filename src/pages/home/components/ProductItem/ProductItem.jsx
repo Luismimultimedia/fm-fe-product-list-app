@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-import Image from "../../../../components/Image/Image"
+import Image from "../../../../components/Image/Image";
+import AddToCartButton from "../AddToCartButton/AddToCartButton"
 
 import "./ProductItem.scss"
 
@@ -13,11 +14,13 @@ const ProductItem = ({ product }) => {
                 altText={product?.category}
                 customClass={"product-item__image"}
             />
-            <button>Add to cart</button>
+            <div className='product-item__add-to-cart'>
+                <AddToCartButton />
+            </div>
             <div className="product-item__content">
-                <p>{product?.category}</p>
-                <h1>{product?.name}</h1>
-                <p>{`$${parseFloat(product?.price).toFixed(2)}`}</p>
+                <p className='product-item__category'>{product?.category}</p>
+                <h1 className='product-item__name'>{product?.name}</h1>
+                <p className='product-item__price'>{`$${parseFloat(product?.price).toFixed(2)}`}</p>
             </div>
         </div>
     );

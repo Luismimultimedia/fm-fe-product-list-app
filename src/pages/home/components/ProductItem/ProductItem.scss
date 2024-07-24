@@ -1,3 +1,5 @@
+@import "../../../../styles/shared/index.scss";
+
 .product-item {
 
     width: 100%;
@@ -11,5 +13,30 @@
             width: 100%;
             border-radius:  8px;
         }
+    }
+
+    &__add-to-cart {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+        margin-top: -29px;
+        z-index: 1;
+    }
+
+    &__category {
+        @include text-body-400;
+        color: $rose-500;
+    }
+
+    &__name {
+        @include text-body-600;
+        color: $rose-900;
+    }
+
+    &__price {
+        @include text-body-600;
+        color: $red;
     }
 }

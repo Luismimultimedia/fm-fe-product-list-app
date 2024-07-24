@@ -1,0 +1,34 @@
+@import "../../../../styles/shared/index.scss";
+
+.add-to-cart-button {
+
+    align-items: center;
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 28px;
+    width: 160px;
+
+    &--initial {
+        @include text-body-500;
+        border: 1px solid $red;
+        background-color: white;
+    }
+
+    &--increase {
+        @include text-body-500;
+        background-color: $red;
+        color: white;
+        cursor: default;
+    }
+}
+
+.button-icon {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
