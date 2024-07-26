@@ -17,9 +17,11 @@ const Cart = () => {
     }, [cartList])
 
     return (
-        <aside className="cart">
-            <h2 className="cart__header">Your Cart ({ quantityItems })</h2>
-            {quantityItems ===0 ? <EmptyCart /> : <CartList list={cartList} />}
+        <aside>
+            <div className="cart">
+                <h2 className="cart__header">Your Cart ({ quantityItems })</h2>
+                {quantityItems ===0 ? <EmptyCart /> : <CartList list={cartList} />}
+            </div>
         </aside>
     )
 };

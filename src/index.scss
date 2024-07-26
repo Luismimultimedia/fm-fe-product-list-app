@@ -1,9 +1,6 @@
 :root {
-  @font-face {
-    font-family: "Red";
-    src: url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-    font-family: "Red", system-ui, Avenir, Helvetica, Arial, sans-serif;
-  }
+  @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+  font-family: "Red Hat Display", Helvetica, Arial, sans-serif;
 }
 
 html, body, div, span, applet, object, iframe,
