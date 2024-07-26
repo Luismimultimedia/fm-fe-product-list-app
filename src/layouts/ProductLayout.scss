@@ -1,6 +1,7 @@
 @import "../styles/shared/index";
 
 main {
+    background-color: $rose-50;
     padding: 24px;
 
     @include tablet-up {

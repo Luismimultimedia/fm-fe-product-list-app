@@ -1,0 +1,32 @@
+@import "../../../../styles/shared/index.scss";
+
+.cart-list {
+    list-style-type: none;
+
+    &__item {
+        border-bottom: 1px solid $rose-100;
+        padding: 16px 0;
+        width: 100%;
+
+        &:first-child {
+           padding-top: 0; 
+        }
+    }
+
+    &__container-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 24px 0;
+    }
+
+    &__order {
+        @include text-body-400;
+        color: $rose-900;
+    }
+
+    &__total-price {
+        @include text-display-900;
+        color: $rose-900;
+    }
+}

@@ -3,6 +3,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import { Provider } from 'react-redux'
+import { store } from './store'
 
 import HomePage from "./pages/home/HomePage";
 import ErrorPage from "./pages/error/ErrorPage";
@@ -22,5 +24,7 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <Provider store={store}>
     <RouterProvider router={router} />
+  </Provider>
 )
